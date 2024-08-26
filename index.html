@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Micro+5&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">DECODIFICADOR DE TEXTO</h1>
+    </header>
+
+    <main class="conteudo__principal">
+
+        <section class="container__principal">
+
+            <textarea class="input" placeholder="Digite seu texto:"></textarea>
+
+            <div class="regras">
+            <img class="icon__alert" src="/assets/danger.svg">
+            <h5>Apenas letras minúsculas e sem acento.</h5>
+            </div>
+
+            <div class="botoes">
+                <button onclick="criptografar()" class="botaoUm">Criptografar</button>
+                <button onclick="descriptografar()" class="botaoDois"> Descriptografar </button>
+            </div>
+
+        </section>
+
+        <section class="output">
+            <p class="aviso"> Oops...Nenhuma mensagem encontrada.</p>
+            <button class="botaoCopiar"> Copiar </button>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <footer class="rodape">
+        <p>Desenvolvido por Ainoã Oliveira</p>
+    </footer>
+</body>
+
+</html>
